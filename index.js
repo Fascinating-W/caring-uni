@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-01-09 15:33:22
  * @LastEditors: Wanko
- * @LastEditTime: 2024-01-10 11:33:26
+ * @LastEditTime: 2024-02-05 20:53:34
  * @Description:
  */
 export default {
@@ -93,7 +93,7 @@ export default {
 
   toast(
     title = '未知错误信息',
-    { duration = 1000, mask = true, icon = 'none' }
+    { duration = 1000, mask = true, icon = 'none' } = {}
   ) {
     if (title.length <= 20) {
       uni.showToast({
